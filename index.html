@@ -28,10 +28,58 @@
     <meta name="twitter:image" content="https://rollingcatsoftware.com/og-image.png">
 
     <link rel="canonical" href="https://rollingcatsoftware.com">
+    <link rel="alternate" hreflang="en" href="https://rollingcatsoftware.com">
+    <link rel="alternate" hreflang="tr" href="https://rollingcatsoftware.com">
+    <link rel="alternate" hreflang="x-default" href="https://rollingcatsoftware.com">
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%90%B1%3C/text%3E%3C/svg%3E">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "WebSite",
+                "name": "RollingCat Software",
+                "url": "https://rollingcatsoftware.com",
+                "description": "Building modern, secure, and scalable applications from idea to deployment.",
+                "inLanguage": ["en", "tr"]
+            },
+            {
+                "@type": "Organization",
+                "name": "RollingCat Software",
+                "url": "https://rollingcatsoftware.com",
+                "logo": "https://rollingcatsoftware.com/og-image.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "email": "rollingcat.help@gmail.com",
+                    "contactType": "customer support"
+                },
+                "sameAs": [
+                    "https://github.com/ahmetabdullahgultekin"
+                ]
+            },
+            {
+                "@type": "Person",
+                "name": "Ahmet Abdullah Gultekin",
+                "jobTitle": "Full-Stack Developer",
+                "url": "https://rollingcatsoftware.com",
+                "sameAs": [
+                    "https://github.com/ahmetabdullahgultekin"
+                ],
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "RollingCat Software"
+                },
+                "knowsAbout": ["Web Development", "Mobile Development", "Cloud Infrastructure", "AI/ML Integration"]
+            }
+        ]
+    }
+    </script>
     <style>
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -1081,7 +1129,7 @@
     </div>
     <div class="stats">
         <div class="stat">
-            <div class="stat-number">5</div>
+            <div class="stat-number">6</div>
             <div class="stat-label"><span data-en>Projects</span><span data-tr>Proje</span></div>
         </div>
         <div class="stat">
@@ -1317,7 +1365,7 @@
                     <div class="project-header-left">
                         <div class="project-icon">&#x1F4DA;</div>
                         <div class="project-badges">
-                            <span class="status-badge dev"><span class="status-dot"></span> Development</span>
+                            <span class="status-badge development"><span class="status-dot"></span> Development</span>
                             <span class="feature-badge"><span data-en>Cross-platform</span><span data-tr>Cok platformlu</span></span>
                         </div>
                     </div>
