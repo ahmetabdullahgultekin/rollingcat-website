@@ -11,7 +11,7 @@
 
     <!-- OG Meta -->
     <meta property="og:title" content="RollingCat Software — Modern Web, Mobile &amp; AI Solutions">
-    <meta property="og:description" content="Building modern, secure, and scalable applications from idea to deployment. 6 projects, 12+ technologies, self-hosted infrastructure.">
+    <meta property="og:description" content="Building modern, secure, and scalable applications from idea to deployment. 8 projects, 15+ technologies, self-hosted infrastructure.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://rollingcatsoftware.com">
     <meta property="og:site_name" content="RollingCat Software">
@@ -431,6 +431,8 @@
         .project-card[data-color="rose"]::before { background: linear-gradient(90deg, #f43f5e, #fb7185); }
         .project-card[data-color="sky"]::before { background: linear-gradient(90deg, #0ea5e9, #38bdf8); }
         .project-card[data-color="violet"]::before { background: linear-gradient(90deg, #8b5cf6, #a78bfa); }
+        .project-card[data-color="teal"]::before { background: linear-gradient(90deg, #14b8a6, #2dd4bf); }
+        .project-card[data-color="orange"]::before { background: linear-gradient(90deg, #f97316, #fb923c); }
 
         .project-header {
             display: flex;
@@ -463,6 +465,8 @@
         .project-card[data-color="rose"] .project-icon { background: rgba(244,63,94,0.12); }
         .project-card[data-color="sky"] .project-icon { background: rgba(14,165,233,0.12); }
         .project-card[data-color="violet"] .project-icon { background: rgba(139,92,246,0.12); }
+        .project-card[data-color="teal"] .project-icon { background: rgba(20,184,166,0.12); }
+        .project-card[data-color="orange"] .project-icon { background: rgba(249,115,22,0.12); }
 
         .feature-badge {
             display: inline-flex;
@@ -1081,15 +1085,15 @@
     </div>
     <div class="stats">
         <div class="stat">
-            <div class="stat-number">5</div>
+            <div class="stat-number">8</div>
             <div class="stat-label"><span data-en>Projects</span><span data-tr>Proje</span></div>
         </div>
         <div class="stat">
-            <div class="stat-number">12+</div>
+            <div class="stat-number">15+</div>
             <div class="stat-label"><span data-en>Technologies</span><span data-tr>Teknoloji</span></div>
         </div>
         <div class="stat">
-            <div class="stat-number">4</div>
+            <div class="stat-number">6</div>
             <div class="stat-label"><span data-en>In Production</span><span data-tr>Uretimde</span></div>
         </div>
     </div>
@@ -1156,8 +1160,8 @@
                 </div>
                 <div class="project-name">FIVUCSAS</div>
                 <div class="project-subtitle"><span data-en>Biometric Authentication Platform</span><span data-tr>Biyometrik Kimlik Dogrulama Platformu</span></div>
-                <p class="project-desc" data-en>Multi-tenant biometric authentication SaaS featuring 10 auth methods including face recognition, voice verification, fingerprint, NFC, TOTP, and WebAuthn. Built as a university engineering capstone project.</p>
-                <p class="project-desc" data-tr>Yuz tanima, ses dogrulama, parmak izi, NFC, TOTP ve WebAuthn dahil 10 kimlik dogrulama yontemi iceren cok kiracili biyometrik kimlik dogrulama SaaS platformu. Universite muhendislik bitirme projesi olarak gelistirildi.</p>
+                <p class="project-desc" data-en>Multi-tenant biometric authentication SaaS with N-step MFA flow, 10 auth methods (face, voice, fingerprint, NFC, TOTP, WebAuthn), OAuth 2.0/OIDC provider, and an embeddable verification widget. RFC 8176 amr claims, JWT deferred until all steps complete.</p>
+                <p class="project-desc" data-tr>N-adimli MFA akisi, 10 kimlik dogrulama yontemi (yuz, ses, parmak izi, NFC, TOTP, WebAuthn), OAuth 2.0/OIDC saglayici ve gomulu dogrulama widget'i iceren cok kiracili biyometrik kimlik dogrulama SaaS platformu. RFC 8176 amr talepleri, JWT tum adimlar tamamlanana kadar ertelenir.</p>
                 <div class="tech-stack">
                     <span class="tech-badge">Spring Boot</span>
                     <span class="tech-badge">FastAPI</span>
@@ -1167,7 +1171,7 @@
                     <span class="tech-badge">Redis</span>
                 </div>
                 <div class="project-links">
-                    <a href="https://ica-fivucsas.rollingcatsoftware.com" target="_blank" rel="noopener" class="project-link">
+                    <a href="https://app.fivucsas.com" target="_blank" rel="noopener" class="project-link">
                         <span data-en>Live Demo</span><span data-tr>Canli Demo</span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                     </a>
@@ -1311,13 +1315,71 @@
                 </div>
             </div>
 
+            <!-- Share-Agent -->
+            <div class="project-card fade-in" data-color="teal">
+                <div class="project-header">
+                    <div class="project-header-left">
+                        <div class="project-icon">&#x1F4C8;</div>
+                        <div class="project-badges">
+                            <span class="status-badge production"><span class="status-dot"></span> Production</span>
+                            <span class="feature-badge"><span data-en>Automated trading</span><span data-tr>Otomatik ticaret</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-name">Share-Agent</div>
+                <div class="project-subtitle"><span data-en>Stock Portfolio & Trading Agent</span><span data-tr>Hisse Portfoy & Ticaret Ajani</span></div>
+                <p class="project-desc" data-en>Automated stock trading agent with watchlist management, multi-window trading interface, sortable portfolio dashboard, stop-loss monitoring, and real-time price updates from Yahoo Finance and IsYatirim.</p>
+                <p class="project-desc" data-tr>Izleme listesi yonetimi, coklu pencere ticaret arayuzu, siralanabilir portfoy paneli, zarar-durdur izleme ve Yahoo Finance ile IsYatirim'dan gercek zamanli fiyat guncellemeleri iceren otomatik hisse ticaret ajani.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">FastAPI</span>
+                    <span class="tech-badge">Python</span>
+                    <span class="tech-badge">PostgreSQL</span>
+                    <span class="tech-badge">Redis</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/ahmetabdullahgultekin/Share-Agent" target="_blank" rel="noopener" class="project-link-github">
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        Source
+                    </a>
+                </div>
+            </div>
+
+            <!-- Gelecegin Adanasi -->
+            <div class="project-card fade-in" data-color="orange">
+                <div class="project-header">
+                    <div class="project-header-left">
+                        <div class="project-icon">&#x1F3D7;&#xFE0F;</div>
+                        <div class="project-badges">
+                            <span class="status-badge production"><span class="status-dot"></span> Production</span>
+                            <span class="feature-badge"><span data-en>City planning</span><span data-tr>Sehir planlama</span></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-name">geleceginadanasi.com.tr</div>
+                <div class="project-subtitle"><span data-en>City Planning Platform for Adana</span><span data-tr>Adana Icin Sehir Planlama Platformu</span></div>
+                <p class="project-desc" data-en>Interactive city planning and community engagement platform for Adana, Turkey. Built with Next.js and server-side rendering for SEO, featuring project showcases, news updates, and citizen feedback channels.</p>
+                <p class="project-desc" data-tr>Adana icin interaktif sehir planlama ve topluluk katilim platformu. SEO icin Next.js ve sunucu tarafi rendering ile gelistirildi; proje vitrinleri, haber guncellemeleri ve vatandas geri bildirim kanallari iceriyor.</p>
+                <div class="tech-stack">
+                    <span class="tech-badge">Next.js</span>
+                    <span class="tech-badge">TypeScript</span>
+                    <span class="tech-badge">Docker</span>
+                    <span class="tech-badge">Traefik</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://geleceginadanasi.com.tr" target="_blank" rel="noopener" class="project-link">
+                        <span data-en>Live Site</span><span data-tr>Canli Site</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+
             <!-- TrainVoc -->
             <div class="project-card fade-in" data-color="sky">
                 <div class="project-header">
                     <div class="project-header-left">
                         <div class="project-icon">&#x1F4DA;</div>
                         <div class="project-badges">
-                            <span class="status-badge dev"><span class="status-dot"></span> Development</span>
+                            <span class="status-badge development"><span class="status-dot"></span> Development</span>
                             <span class="feature-badge"><span data-en>Cross-platform</span><span data-tr>Cok platformlu</span></span>
                         </div>
                     </div>
@@ -1417,7 +1479,7 @@
             </div>
             <div class="infra-card">
                 <div class="infra-icon">&#x1F500;</div>
-                <div class="infra-name">Traefik</div>
+                <div class="infra-name">Traefik v3.6</div>
                 <div class="infra-desc"><span data-en>Reverse proxy & auto SSL</span><span data-tr>Ters vekil & otomatik SSL</span></div>
             </div>
             <div class="infra-card">
@@ -1444,6 +1506,11 @@
                 <div class="infra-icon">&#x1F310;</div>
                 <div class="infra-name">Nginx</div>
                 <div class="infra-desc"><span data-en>Static file serving</span><span data-tr>Statik dosya sunumu</span></div>
+            </div>
+            <div class="infra-card">
+                <div class="infra-icon">&#x1F6E1;&#xFE0F;</div>
+                <div class="infra-name">WireGuard VPN</div>
+                <div class="infra-desc"><span data-en>Secure admin access</span><span data-tr>Guvenli yonetici erisimi</span></div>
             </div>
         </div>
     </div>
@@ -1505,8 +1572,11 @@
             <div class="tech-item"><div class="tech-item-icon">&#x1F534;</div><div class="tech-item-name">Redis</div></div>
             <div class="tech-item"><div class="tech-item-icon">&#x1F433;</div><div class="tech-item-name">Docker</div></div>
             <div class="tech-item"><div class="tech-item-icon">&#x2699;&#xFE0F;</div><div class="tech-item-name">GitHub Actions</div></div>
+            <div class="tech-item"><div class="tech-item-icon">&#x1F500;</div><div class="tech-item-name">Traefik</div></div>
             <div class="tech-item"><div class="tech-item-icon">&#x1F310;</div><div class="tech-item-name">Nginx</div></div>
             <div class="tech-item"><div class="tech-item-icon">&#x1F4CA;</div><div class="tech-item-name">pgvector</div></div>
+            <div class="tech-item"><div class="tech-item-icon">&#x1F510;</div><div class="tech-item-name">OAuth 2.0</div></div>
+            <div class="tech-item"><div class="tech-item-icon">&#x1F6E1;&#xFE0F;</div><div class="tech-item-name">WireGuard</div></div>
         </div>
     </div>
 </section>
@@ -1521,6 +1591,27 @@
         </div>
         <div class="blog-grid fade-in">
             <div class="blog-card">
+                <div class="blog-date"><span data-en>April 2026</span><span data-tr>Nisan 2026</span></div>
+                <div class="blog-title"><span data-en>N-Step MFA Flow</span><span data-tr>N-Adimli MFA Akisi</span></div>
+                <p class="blog-excerpt" data-en>FIVUCSAS now supports N-step multi-factor authentication. JWT issuance is deferred until all auth steps complete, with RFC 8176 amr claims tracking each verified method.</p>
+                <p class="blog-excerpt" data-tr>FIVUCSAS artik N-adimli cok faktorlu kimlik dogrulamayi destekliyor. JWT, tum dogrulama adimlari tamamlanana kadar erteleniyor ve RFC 8176 amr talepleri her dogrulanmis yontemi takip ediyor.</p>
+                <span class="blog-tag">Security</span>
+            </div>
+            <div class="blog-card">
+                <div class="blog-date"><span data-en>April 2026</span><span data-tr>Nisan 2026</span></div>
+                <div class="blog-title"><span data-en>Domain Migration to fivucsas.com</span><span data-tr>fivucsas.com'a Alan Adi Gocusu</span></div>
+                <p class="blog-excerpt" data-en>All FIVUCSAS services migrated from rollingcatsoftware.com subdomains to dedicated fivucsas.com domains: app, api, bio, demo, and verify subdomains.</p>
+                <p class="blog-excerpt" data-tr>Tum FIVUCSAS hizmetleri rollingcatsoftware.com alt alan adlarindan ozel fivucsas.com alan adlarina tasindi: app, api, bio, demo ve verify alt alan adlari.</p>
+                <span class="blog-tag">Infrastructure</span>
+            </div>
+            <div class="blog-card">
+                <div class="blog-date"><span data-en>April 2026</span><span data-tr>Nisan 2026</span></div>
+                <div class="blog-title"><span data-en>geleceginadanasi.com.tr Launched</span><span data-tr>geleceginadanasi.com.tr Yayinlandi</span></div>
+                <p class="blog-excerpt" data-en>New city planning and community engagement platform for Adana launched. Built with Next.js, self-hosted on Docker with Traefik reverse proxy.</p>
+                <p class="blog-excerpt" data-tr>Adana icin yeni sehir planlama ve topluluk katilim platformu yayinlandi. Next.js ile gelistirildi, Docker ve Traefik ters vekil ile kendi sunucusunda barindiriliyor.</p>
+                <span class="blog-tag">Launch</span>
+            </div>
+            <div class="blog-card">
                 <div class="blog-date"><span data-en>March 2026</span><span data-tr>Mart 2026</span></div>
                 <div class="blog-title"><span data-en>Portfolio Website Launched</span><span data-tr>Portfolyo Web Sitesi Yayinlandi</span></div>
                 <p class="blog-excerpt" data-en>RollingCat Software portfolio is now live at rollingcatsoftware.com, showcasing all projects and infrastructure.</p>
@@ -1530,8 +1621,8 @@
             <div class="blog-card">
                 <div class="blog-date"><span data-en>March 2026</span><span data-tr>Mart 2026</span></div>
                 <div class="blog-title"><span data-en>All CI/CD Pipelines Green</span><span data-tr>Tum CI/CD Pipeline'lari Yesil</span></div>
-                <p class="blog-excerpt" data-en>All 5 repositories now have working CI/CD pipelines with GitHub Actions, including Muhabbet Mobile (Android + iOS).</p>
-                <p class="blog-excerpt" data-tr>5 deponun tumunde artik GitHub Actions ile calisan CI/CD pipeline'lari var, Muhabbet Mobile (Android + iOS) dahil.</p>
+                <p class="blog-excerpt" data-en>All repositories now have working CI/CD pipelines with GitHub Actions, including Android + iOS mobile builds.</p>
+                <p class="blog-excerpt" data-tr>Tum depolarda artik GitHub Actions ile calisan CI/CD pipeline'lari var, Android + iOS mobil derlemeleri dahil.</p>
                 <span class="blog-tag">DevOps</span>
             </div>
             <div class="blog-card">
